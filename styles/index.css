@@ -1,0 +1,483 @@
+body{
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 700;
+    margin: -8px;
+
+}
+header{
+    height: 100px;
+    width: 1440px;
+    position: fixed;
+    background-color: #151515de;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+header > .logo{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > .logo:hover{
+    background-color: rgb(70, 70, 70);
+}
+header > .logo > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > .logo > a > img{
+    height: 90%;
+}
+header > nav{
+    width: 88%;
+    height: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+header > nav > .item{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > nav > .item:hover{
+    background-color: rgb(70, 70, 70);
+}
+header > nav > .purchase{
+    background-color: red;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > nav > .purchase:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    width: 1440px;
+    position: static;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+main > .images{
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}        
+main > .images > img{
+    width: 1440px;
+    height: 800px;
+}
+main > .dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -40px;
+    column-gap: 20px;
+}
+main > .gameplay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+    text-align: center;
+}
+main > .gameplay > p{
+    width: 90%;
+}
+main > .gameplay > h3 > p{
+    text-align: center;
+    line-height: 170px;
+    white-space: pre-wrap;
+}
+main > .gameplay > .images2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 600px;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #1C1C1C 51.56%, rgba(16, 16, 16, 0) 100%);
+}
+main > .gameplay > .images2 > .survivor{
+    height: 100%;
+    width: 327px;
+}
+main > .gameplay > .images2 > .killer{
+    height: 100%;
+    width: 397px;
+}
+main > .gameplay > .twoSides{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #1C1C1C 51.56%, rgba(16, 16, 16, 0) 100%);
+}
+main > .gameplay > .twoSides > .description{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 70px;
+}
+main > .gameplay > .twoSides > .description > .text{
+    width: 450px;
+    height: 100%;
+    text-align: left;
+}
+main > .gameplay > .twoSides > .description > img{
+    height: 100%;
+    width: 820px;
+}
+main > .reviews{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #1C1C1C 51.56%, rgba(16, 16, 16, 0) 100%);
+}
+main > .reviews > .container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    column-gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+}
+main > .reviews > .container > .review{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 50px;
+}
+main > .reviews > .container > .review:nth-child(1){
+    row-gap: 75px;
+}
+main > .reviews > .container > .review:nth-child(3){
+    row-gap: 40px;
+}
+main > .reviews > .container > .review > .text{
+    text-align: center;
+    font-size: 24px;
+}
+main > .reviews > .container > .review > .numbers{
+    text-align: center;
+}
+main > .reviews > .container > .review > img{
+    height: 80px;
+}
+main > .reviews > .container > .review:nth-child(3) > img{
+    height: 120px;
+}
+main > .platforms{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #1C1C1C 51.56%, rgba(16, 16, 16, 0) 100%);
+}
+main > .platforms > .content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+main > .platforms > .content > a > i{
+    font-size: 290px;
+}
+main > .platforms > .content > a > img{
+    width: 270px;
+}
+main > .comunity{
+    height: 100%px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #1C1C1C 51.56%, rgba(16, 16, 16, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > .comunity > .social{
+    display: flex;
+    column-gap: 100px;
+}
+main > .comunity > .social > a > i{
+    font-size: 200px;
+}
+main > footer{
+    width: 100%;
+    height: 210px;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(360deg, #212121 3%, rgba(0, 0, 0, 0) 50%);
+}
+main > footer > p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+h1{
+    font-size: 120px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+h2{
+    font-size: 96px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+h3{
+    font-size: 78px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.SurvivorOrKiller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 250px;
+    margin-left: -100px;
+}
+#dot{
+    font-size: 20px;
+    filter: contrast(30%);
+}
+#dot:hover{
+    filter: contrast(100%);
+}
+@media (max-width:1439px){
+    header{
+        width: 100px;
+        right: 0px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    header > .logo{
+        margin-right: 0px;
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header > nav{
+        width: 100%;
+        height: 70%;
+        flex-direction: column;
+        font-size: 60px;
+    }
+    header > nav > .item{
+        height: 150px;
+        width: 100%;
+        
+    }
+    header > nav > .purchase{
+        height: 150px;
+        width: 100%;
+
+    }
+    header > .logo{
+        width: 100%;
+        height: 15%;
+    }
+    header > .bar{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header > .bar:hover{
+        background-color: rgb(70, 70, 70);
+    }
+    header > .bar > i{
+        font-size: 70px;
+        color: white;
+    }
+    main{
+        width: 100%;
+    }
+    main > .gameplay > .images2{
+    column-gap: 300px;
+    }
+    .SurvivorOrKiller{
+        column-gap: 50px;
+        margin-left: 0px;
+    }
+    main > .gameplay > .twoSides{
+        row-gap: 10px;
+    }
+    main > .gameplay > .twoSides > h3{
+        line-height: 80px;
+    }
+    main > .gameplay > .twoSides > .description{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        height: 100%;
+    }
+    main > .gameplay > .twoSides > .description > .text{
+        width: 80%;
+        text-align: center;
+    }
+    main > .platforms{
+        height: 100%;
+    }
+    main > .platforms > .content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    main > .comunity{
+        height: 100%;
+    }
+    main > .comunity > .social{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 100px;
+        justify-items: center;
+    }
+    main > .reviews > .container{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+    main > .reviews > .container > .review{
+        width: 90%;
+    }
+    
+main > .reviews > .container > .review:nth-child(1){
+    row-gap: 50px;
+}
+main > .reviews > .container > .review:nth-child(3){
+    row-gap: 50px;
+}
+    main > .reviews > .container > .review > .text{
+        font-size: 40px;
+    }
+}
+@media (max-width:1040px){
+main > .gameplay > .images2 > .survivor{
+    height: 50%;
+    width: 160px;
+}
+main > .gameplay > .images2 > .killer{
+    height: 50%;
+    width: 200px;
+}
+body{
+    font-size: 25px;
+}
+h3{
+    font-size: 50px;
+}
+h2{
+    font-size: 50px;
+}
+
+main > .gameplay > .twoSides > .description > img{
+    height: auto;
+    width: 90%;
+}
+}
+@media (max-width:700px){
+    main > .platforms > .content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    main > .comunity > .social{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    main > .gameplay > .images2{
+    column-gap: 100px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    
+    main > .platforms > .content > a > i{
+        font-size: 140px;
+    }
+    main > .platforms > .content > a > img{
+        width: 130px;
+    }
+    main > .comunity > .social > a > i{
+        font-size: 100px;
+    }
+}
+@media (max-width:500px){
+    main > .gameplay > .images2{
+    column-gap: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    main > .reviews > .container > .review > .text{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    main > .reviews > .container > .review > img{
+        height: 40px;
+    }
+    main > .reviews > .container > .review:nth-child(3) > img{
+        height: 60px;
+    }
+}
+@media (max-width:400px){
+    h1{
+        font-size: 50px;
+    }
+    main > .gameplay > .images2{
+    column-gap: 0px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
