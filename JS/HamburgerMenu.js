@@ -12,7 +12,7 @@ addEventListener("resize", (event) => {
                 if (header.style.width != "500px"){
                     header.style.height = "100%";
                     header.style.width = "500px";
-                    header.innerHTML = `<section class="bar"><i class="fa-solid fa-bars"></i></section><section class="logo"><a href="DeadByDaylight-Main.html"><img src="images/DBDlogo.png" alt="logo"></a></section>
+                    header.innerHTML = `<section class="bar"><i class="fa-solid fa-bars"></i></section><section class="logo"><a href="index.html"><img src="images/DBDlogo.png" alt="logo"></a></section>
                     <nav>
                     <section class="item"><a href="DeadByDaylight-Killers.html">KILLERS</a></section>
                     <section class="item"><a href="DeadByDaylight-Survivors.html">SURVIVORS</a></section>
